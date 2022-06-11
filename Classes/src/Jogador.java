@@ -5,6 +5,8 @@ public class Jogador {
     public int num;//Quando ele e publico se pode modificalo fora da classe
     private int vidas = 100; //Como ele e privado só pode ser modificado dentro da classe.
 
+    static boolean alerta = false;
+    static int qtdjogadores = 0;
     public Jogador(int num){
         this.num=num;
         //Esse e um metodo construtor pois tem o mesmo nome da classe
@@ -27,6 +29,15 @@ public class Jogador {
         }else{
             this.vidas = vidas;
         }
+
+    }
+
+    //Static
+    //Metodos static permite com que seja possivel usar uma classe sem preicsar instaciar a classe
+    public void info(){
+        System.out.printf("%nVidas:%d", this.vidas);
+        System.out.printf("%nAlerta:%s", alerta ? "Sim" : "Não");
+        System.out.printf("%nJogadores:%d", qtdjogadores);
 
     }
 }
