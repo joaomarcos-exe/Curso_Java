@@ -1,5 +1,5 @@
 public class main {
-    public static void main(String[] args){
+    public static void main(){
         final int tamanho=5;
         int[] num = new int[tamanho];
         num[0] = 1;
