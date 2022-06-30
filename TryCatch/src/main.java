@@ -20,7 +20,5 @@ public class main {
         }finally {
             System.out.println("Fim do TryCatch");
         }
-
-
     }
 }
