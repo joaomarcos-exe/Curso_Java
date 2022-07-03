@@ -5,6 +5,10 @@ public class main {
         ArrayList<Integer> numeros = new ArrayList<>();
         ArrayList<String> carros = new ArrayList<>();
 
+        int nota1,nota2;
+        nota1 =0;
+        nota2 =3;
+
         numeros.add(11);
         numeros.add(22);
         numeros.add(33);
@@ -12,13 +16,17 @@ public class main {
         carros.add("Camaro");
         carros.add("Honda civic");
         carros.add("Rand Rover");
-
-        try{
-            System.out.println(carros.get(10));
-        }catch(IndexOutOfBoundsException e){
-            System.out.println("ERROR: " + e.getMessage());
-        }finally {
-            System.out.println("Fim do TryCatch");
+        if(nota2 ==3 ){
+            //Utilizando o throw eu posso mandar um erro propositalmente
+            throw new IllegalArgumentException("Nota invalido");
         }
+
+//        try{
+//            System.out.println(carros.get(10));
+//        }catch(IndexOutOfBoundsException e){
+//            System.out.println("ERROR: " + e.getMessage());
+//        }finally {
+//            System.out.println("Fim do TryCatch");
+//        }
     }
 }
